@@ -1,0 +1,124 @@
+.hero {
+  background-image: url(/images/shaun-frankland-nSl7IQGYpAQ-unsplash.jpg);
+  background-position: bottom left;
+  padding-bottom: 11.5rem;
+  padding-top: 11.5rem;
+  color: var(--color--white);
+
+  h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+
+  span {
+    color: var(--color--orange);
+  }
+
+  p {
+    padding-top: 0.5rem;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  &__buttons {
+    button {
+      background: none;
+      color: var(--color--white);
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      font-family: inherit;
+      border: 1px solid var(--color--white);
+      border-radius: 0.5rem;
+      cursor: pointer;
+    }
+    &-new {
+      padding: 0.5rem 3rem;
+    }
+
+    &-watch {
+      padding: 0.5rem 1.84535rem;
+    }
+    :hover {
+      border: solid 1px var(--color--orange);
+      background-color: var(--color--orange);
+    }
+  }
+}
+
+@media (min-width: 43.75em) {
+  // 700px
+
+  .hero {
+    h1 {
+      font-size: 2.625rem;
+    }
+
+    &__buttons {
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+
+      button {
+        margin: 1.5rem 0.5rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        border: 1.5px solid var(--color--white);
+      }
+
+      &-new {
+        padding: 0.6rem 3rem;
+      }
+
+      &-watch {
+        padding: 0.6rem 1.84535rem;
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  }
+}
+
+@media (min-width: 62em) {
+  // 992
+  .hero {
+    padding-top: 13rem;
+    h1 {
+      font-size: 3.875rem;
+    }
+    p {
+      font-size: 1.18rem;
+    }
+  }
+}
+
+@media (min-width: 87em) {
+  // 1392
+  .hero {
+    padding-top: 18rem;
+
+    h1 {
+      font-size: 4.131rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    button {
+      border: 1.75px solid var(--color--white);
+    }
+
+    &__buttons {
+      &-new {
+        padding: 0.75rem 3rem;
+      }
+
+      &-watch {
+        padding: 0.75rem 1.84535rem;
+      }
+    }
+  }
+}
